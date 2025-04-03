@@ -2,7 +2,7 @@ radio.onReceivedString(function () {
     if (explode == 1) {
         for (let index = 0; index < 10000; index++) {
             music.setVolume(127)
-            music.play(music.stringPlayable("C5 C5 C5 C5 C5 C5 C5 C5 ", 120), music.PlaybackMode.UntilDone)
+            music.play(music.stringPlayable("C5 C5 C5 C5 C5 C5 C5 C5 ", 120), music.PlaybackMode.LoopingInBackground)
             pins.digitalWritePin(DigitalPin.P0, 1)
             pins.digitalWritePin(DigitalPin.P1, 1)
             pins.digitalWritePin(DigitalPin.P2, 1)
